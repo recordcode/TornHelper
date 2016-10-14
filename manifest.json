@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+  "name": "TornHelper",
+  "description": "Help to play Torn City",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [
+    "http://*/",
+    "cookies"
+  ]
+}

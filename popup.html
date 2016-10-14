@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>TornHelper</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 360px;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      width: 50%;
+    }
+    #nervetake, #crime {
+      width: 38px;
+    }
+  </style>
+  <script src="js/popup.js"></script>
+  <script src="js/data.js"></script>
+</head>
+<body>
+  <div id="options">
+    <button id="start">启动</button>
+    <button id="saveconf">保存配置</button>
+    <button id="showlogs">查看日志</button>
+    <button id="clearlogs">清空日志</button>
+    <form name="conf">
+      <fieldset>
+        <legend>Gym</legend>
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" name="gymEnabled"/>
+              <label>开启</label>
+            </td>
+            <td>
+              <label>属性：</label>
+              <select name="q">
+                <option value="1" selected="selected">Strength</option>
+                <option value="2">Defense</option>
+                <option value="3">Speed</option>
+                <option value="4">Dexterity</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Crime</legend>
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" name="crimeEnabled"/>
+              <label>开启</label>
+            </td>
+            <td>
+              <label>名称：</label>
+              <label id="crimeName">searchtrainstation</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label>事项：</label>
+              <select name="nervetake" id="nervetake"></select>
+              <label>-</label>
+              <select name="crime" id="crime"></select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
